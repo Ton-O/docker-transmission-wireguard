@@ -29,6 +29,8 @@ services:
             #- WEBPROXY_ENABLED=true
             #- WEBPROXY_PORT=8888
             #- HEALTH_CHECK_HOST=google.com
+            - TRANSMISSION_LOG_LEVEL=info
+            - GLOBAL_APPLY_PERMISSIONS=true            
         ports:
             # Transmission
             - 9091:9091
